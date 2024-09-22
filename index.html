@@ -1,7 +1,84 @@
----
-layout: default
-title: Hi, I am Carina! This page is work in progress
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carina Forster</title>
+    <style>
+        /* Dark green background */
+        body {
+            background-color: #013220;  /* Dark green color */
+            color: #ffffff;             /* White text */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Style for the CV content */
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #1e4d2b;  /* Lighter green section */
+            border-radius: 10px;
+        }
 
-<h2>My CV</h2>
-<embed src="CV_Forster_072024.pdf" type="application/pdf" width="100%" height="600px" />
+        /* Style for the photo */
+        .profile-photo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #fff;
+        }
+
+        /* Heading style */
+        h1, h2 {
+            font-family: 'Georgia', serif;
+            color: #ddffdd;  /* Soft light green */
+        }
+
+        /* Artsy feel */
+        h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile picture in the upper right corner -->
+    <img src="myphoto.jpg" alt="My Photo" class="profile-photo">
+
+    <!-- Main content area -->
+    <div class="content">
+        <h1>My Name</h1>
+        <h2>Curriculum Vitae</h2>
+        
+        <!-- CV Information -->
+        <h3>Education</h3>
+        <ul>
+            <li>Bachelor's Degree in [Your Field], [Your University], [Year]</li>
+        </ul>
+        
+        <h3>Experience</h3>
+        <ul>
+            <li>[Job Title], [Company Name], [Years]</li>
+            <p>Short description of the role and achievements.</p>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+        </ul>
+
+        <!-- Download link for your CV -->
+        <h3>Download My CV</h3>
+        <p><a href="CV_Forster_072024.pdf" download style="color: #ddffdd;">Download CV</a></p>
+    </div>
+</body>
+</html>

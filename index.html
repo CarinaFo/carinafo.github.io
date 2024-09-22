@@ -79,6 +79,34 @@
             letter-spacing: 3px;
             text-transform: uppercase;
         }
+           /* Email address highlight */
+        .email-section {
+            background-color: #8B0000; /* Dark red background for highlight */
+            color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 1.5em;
+        }
+
+        /* Make email copy-pasteable */
+        .email {
+            font-weight: bold;
+            font-family: monospace; /* Monospace font for easy copying */
+        }
+
+        /* Copy button styling */
+        .copy-button {
+            background-color: #00ff00; /* Bright green button */
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -131,11 +159,11 @@
 
         <!-- Email Highlight Section -->
         <div class="email-section">
-            <h2>Contact me for more info and rates</h2>
-            <p class="email">carinaforster0611@gmail.com</p>
+            <h2>Contact Me</h2>
+            <p class="email" id="email">carinaforster0611@gmail.com</p>
+            <button class="copy-button" onclick="copyEmail()">Copy Email to Clipboard</button>
         </div>
         
-
         <!-- Google Summer of Code Experience -->
         <div class="section teacher">
             <h2>Google Summer of Code 2024</h2>
@@ -158,5 +186,14 @@
         <h2>Check out my CV for more info</h2>
         <p><a href="CV_Forster_072024.pdf" download>Download CV</a></p>
     </div>
+ <!-- JavaScript to enable Copy to Clipboard functionality -->
+    <script>
+        function copyEmail() {
+            const emailText = document.getElementById('email').textContent;
+            navigator.clipboard.writeText(emailText).then(() => {
+                alert("Email copied to clipboard!");
+            });
+        }
+    </script>
 </body>
 </html>

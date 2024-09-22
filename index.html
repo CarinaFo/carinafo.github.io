@@ -63,6 +63,36 @@
             padding-left: 10px;
         }
 
+        /* Email section directly below profile picture */
+        .email-section {
+            position: absolute;
+            top: 190px; /* Adjust this to position just below the profile picture */
+            right: 20px;
+            text-align: right;
+        }
+                /* Email appearance */
+        .email {
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: #2F2F2F; /* Subtle dark grey background */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Simple copy button */
+        .copy-button {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .copy-button:hover {
+            background-color: #8B0000; /* Dark red on hover */
+        }
         /* Links to CV */
         a {
             color: #00ff00; /* Bright green link color for contrast */
@@ -78,34 +108,6 @@
             font-size: 3em;
             letter-spacing: 3px;
             text-transform: uppercase;
-        }
-           /* Email address highlight */
-        .email-section {
-            background-color: #8B0000; /* Dark red background for highlight */
-            color: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
-            text-align: center;
-            border-radius: 5px;
-            font-size: 1.5em;
-        }
-
-        /* Make email copy-pasteable */
-        .email {
-            font-weight: bold;
-            font-family: monospace; /* Monospace font for easy copying */
-        }
-
-        /* Copy button styling */
-        .copy-button {
-            background-color: #00ff00; /* Bright green button */
-            color: #000000;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            margin-top: 10px;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -155,13 +157,6 @@
                 <li><a href="https://github.com/CarinaFo/berlin_brains_2023" target="_blank">Berlin Brains workshop</a></li>
                 <li><a href="https://github.com/CarinaFo/MNE_workshop_liverpool_2024" target="_blank">2-day MNE-Python EEG analysis workshop</a></li>
             </ul>
-        </div>
-
-        <!-- Email Highlight Section -->
-        <div class="email-section">
-            <h2>Contact Me</h2>
-            <p class="email" id="email">carinaforster0611@gmail.com</p>
-            <button class="copy-button" onclick="copyEmail()">Copy Email to Clipboard</button>
         </div>
         
         <!-- Google Summer of Code Experience -->
